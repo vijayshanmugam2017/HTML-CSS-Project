@@ -1,0 +1,68 @@
+/* Main Contents Starts-------------------------------------------- */
+
+/* Main Contents Header Starts------------------------------------------- */
+.main {
+    padding: 5px;
+    background-color: #f9f7f7;
+}
+
+ul.menu-list {
+    display: flex;
+    padding: 5px 0px 10px 20px;
+    list-style: none;
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
+ul.menu-list a {
+    color: gray;
+    padding: 0px .6em;
+    transition: all .3s ease-in;
+}
+
+ul.menu-list a:hover {
+    border-radius: 3em;
+    border: 2px solid aqua;
+}
+/* Main Contents Header End-------------------------------------------- */
+
+/* Main Contents Grid Starts---------------------------------------------------------- */
+.grid-container {
+    display: flex;
+    padding: 0px 25px;
+}
+
+.grid-item {
+    padding: 1px 3px;
+}
+/* Main Contents Grid End---------------------------------------------------------- */
+
+/* Responsive view  @media (min-768px) Starts-------------------------------------------------- */
+@media only screen and (min-width:768px){
+    ul.menu-list {
+        padding: 10px 0px 10px 55px;
+        font-size: medium;
+    }
+
+    .grid-container {
+        padding: 0px 20px 5px 55px;
+    }
+
+    .grid-item {
+        padding: 1px 5px;
+    }
+}
+/* Responsive view  @media (min-768px) End-------------------------------------------------- */
+
+/* Responsive view  @media (min-1024px) Starts------------------------------------------------- */
+@media only screen and (min-width:1024px){
+    ul.menu-list {
+        padding: 10px 0px 10px 75px;
+        font-size: larger;
+    }
+
+    .grid-container {
+        padding: 0px 20px 5px 80px;
+    }
+}
+/* Responsive view  @media (min-1024px) End-------------------------------------------------- *

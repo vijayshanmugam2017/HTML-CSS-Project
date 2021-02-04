@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Navebar Starts---------------------------------------------------- */
+
+/* Navebar Header End------------------------------------------ */
+.navbar {
+    background: #2196f3;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.home-menu li {
+    list-style: none;
+}
+
+.home-max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-menu li a {
+    text-transform: uppercase;
+    font-size: x-small;
+    padding: .17em;
+    color: white;
+}
+
+.home-menu li a:hover{
+    color: black;
+    transition: all 1s ease-in;
+}
+
+.home-logo {
+    padding: 5px 0px 5px 30px;
+}
+
+.home-logo a {
+    color: white;
+    font-size: x-large;
+}
+
+.home-logo a:hover{
+    color: black;
+    transition: all .5s ease-in;
+}
+
+.home-menu {
+    display: flex;
+    padding-right: 1em;
+}
+
+.responsive{
+    display: none;
+}
+
+.slidermenu {
+    margin-right: 30px;
+}
+/* Navebar Header End------------------------------------------ */
+
+/*  Navebar slide window For @medaia(Max-with:768px) Starts---------------------------- */
+
+.home-one{
+    width: 0px;
+    height: 30vh;
+    background-color: #2196f3;
+    position: fixed;
+    right: 0;
+    top: 30;
+    transition: all 1s ease-in;
+}
+
+.home-one ul li {
+    text-transform: uppercase;
+    list-style: none;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.home-one ul li a{
+    color: white;
+}
+
+.home-one ul li a:hover{
+    color: black;
+}
+
+.slider{
+    width: 125px;
+    transition: all 1s ease-in;
+}
+/*  Navebar slide window For @medaia(Max-with:768px) End---------------------------- */
+
+/* Navebar Header Image starts-------------------------------------------------------- */
+
+.slide-img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.slide-inner {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+
+.button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 2em;
+}
+
+button:hover {
+    border-color: white;
+    background: aqua;
+}
+
+.button a {
+    padding: .5em 1em;
+    color: white;
+}
+
+.button a:hover{
+    color: white;
+}
+
+.slide-inner p {
+    padding-bottom: 1em;
+}
+/* Navebar Header Image starts-------------------------------------------------------- */
+
+/* Responsive view  @media (min-768px) Starts-------------------------------------------------- */
+@media only screen and (min-width:768px){
+    .responsive{
+        display: block;
+    }
+
+    .slidermenu {
+        display: none;
+    }
+
+    ul.slidermenu {
+        display: none;
+    }
+
+    .home-logo {
+        padding: 15px 0px 15px 65px;
+    }
+
+    .home-logo a {
+        font-size: xx-large;
+    }
+
+    .home-menu li a {
+        font-size: smaller;
+        padding: .5em;
+    }
+
+    /* Header inner content---------------------------- */
+    .slide-inner {
+        font-size: larger;
+        top: 30%;
+        left: 8.5%;
+    }
+
+    .button a {
+        font-size: larger;
+    }
+    
+    .button {
+        padding: 1em;
+    }
+    
+    .button a:hover{
+        text-shadow: 2px 2px 5px red;
+    }
+    
+    .home-menu {
+        padding-right: 2em;
+    }
+}
+/* Responsive view  @media (min-768px) End-------------------------------------------------- */
+
+/* Responsive view  @media (min-1024px) Starts-------------------------------------------------- */
+@media only screen and (min-width:1024px){
+    .home-logo {
+        padding: 15px 0px 15px 85px;
+    }
+
+    .home-logo a {
+        font-size: xxx-large;
+    }
+
+    .home-menu li a {
+        font-size: larger;
+        padding: .4em;
+    }
+    
+    /* Header inner content---------------------------- */
+    .slide-inner {
+        top: 40%;
+    }
+    
+    .button a {
+        font-size: larger;
+    }
+    
+    .button {
+        padding: 1.1em;
+    }
+    
+    .button a:hover{
+        text-shadow: 2px 2px 5px red;
+    }
+}
+/* Responsive view  @media (min-1024px) End-------------------------------------------------- */
